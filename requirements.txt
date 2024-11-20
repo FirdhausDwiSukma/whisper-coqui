@@ -1,0 +1,7 @@
+whisper
+sounddevice
+pydub
+scipy
+TTS
+numpy
+ffmpeg
