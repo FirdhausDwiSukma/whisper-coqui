@@ -89,14 +89,6 @@ def process_audio(audio):
         print("Bahasa tidak didukung. Tidak ada output TTS.")
         return
     
-    # Mainkan audio hasil TTS (MP3 tidak didukung langsung oleh sounddevice)
-    output_file = "output_id.wav" if detected_lang == "id" else "output_en.wav"
-    print(f"Memainkan file audio: {output_file}")
-    audio_output, fs = sd.read(output_file)
-    sd.play(audio_output, samplerate=fs)
-    sd.wait()
-
-
 # Main loop program
 if __name__ == "__main__":
     while True:
